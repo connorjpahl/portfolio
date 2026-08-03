@@ -18,7 +18,8 @@
       "Bash(curl -s \"https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=138&startDate=2026-01-01&endDate=2026-12-31\")",
       "Bash(curl -s \"https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=138&startDate=2026-01-01&endDate=2026-12-31&gameType=R\")",
       "Bash(curl -s -o /dev/null -w \"style.css: %{http_code}\\\\n\" http://localhost:8642/css/style.css)",
-      "Bash(curl -s \"https://statsapi.mlb.com/api/v1/schedule?sportId=14&teamId=279&startDate=2026-01-01&endDate=2026-12-31&gameType=R\")"
+      "Bash(curl -s \"https://statsapi.mlb.com/api/v1/schedule?sportId=14&teamId=279&startDate=2026-01-01&endDate=2026-12-31&gameType=R\")",
+      "Bash(curl -s \"https://statsapi.mlb.com/api/v1/schedule?sportId=13&teamId=443&startDate=2026-04-13&endDate=2026-04-18&gameType=R\")"
     ]
   }
 }

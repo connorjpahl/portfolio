@@ -300,14 +300,27 @@ function formatScheduleTime(gameDate) {
   });
 }
 
+// MLB's API marks postponed/suspended/cancelled games as abstractGameState
+// "Final" too, but with no score - so a real final score needs both checked.
+function hasFinalScore(game) {
+  return (
+    game.status.abstractGameState === 'Final' &&
+    game.teams.away.score != null &&
+    game.teams.home.score != null
+  );
+}
+
 function scheduleResultCell(game, teamId) {
   const away = game.teams.away;
   const home = game.teams.home;
   const teamSide = away.team.id === teamId ? away : home;
   const oppSide = away.team.id === teamId ? home : away;
 
-  if (game.status.abstractGameState === 'Final') {
+  if (hasFinalScore(game)) {
     return `${teamSide.isWinner ? 'W' : 'L'} ${teamSide.score}-${oppSide.score}`;
+  }
+  if (game.status.abstractGameState === 'Final') {
+    return game.status.detailedState; // Postponed, Suspended, Cancelled, etc.
   }
   if (game.status.abstractGameState === 'Live') {
     return 'Live';
@@ -324,7 +337,7 @@ function scheduleTableRows(games, teamId) {
       const isHome = home.team.id === teamId;
       const opponent = isHome ? away.team.name : home.team.name;
       const isToday = dateString(new Date(game.gameDate)) === today;
-      const isFinal = game.status.abstractGameState === 'Final';
+      const isFinal = hasFinalScore(game);
 
       const rowClass = [isToday ? 'table-primary' : '', isFinal ? 'scoreboard-schedule-row' : '']
         .filter(Boolean)

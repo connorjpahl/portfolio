@@ -1,8 +1,9 @@
-// Cardinals Minor League Scoreboard
-// Pulls live game data for each affiliate from the public MLB Stats API
-// (https://statsapi.mlb.com) - no API key required.
+// Cardinals Organization Scoreboard
+// Pulls live game data for the big-league club and each minor league affiliate
+// from the public MLB Stats API (https://statsapi.mlb.com) - no API key required.
 
 const CARDINALS_AFFILIATES = [
+  { name: 'St. Louis Cardinals', level: 'MLB', sportId: 1, teamId: 138 },
   { name: 'Memphis Redbirds', level: 'Triple-A', sportId: 11, teamId: 235 },
   { name: 'Springfield Cardinals', level: 'Double-A', sportId: 12, teamId: 440 },
   { name: 'Peoria Chiefs', level: 'High-A', sportId: 13, teamId: 443 },

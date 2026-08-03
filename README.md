@@ -48,8 +48,9 @@ File: [`js/script.js`](js/script.js)
 An API (Application Programming Interface) is how one program asks another
 program for data. This site's **Scoreboard** section calls the free, public
 [MLB Stats API](https://statsapi.mlb.com) to fetch today's live scores for
-all four St. Louis Cardinals minor league affiliates (Memphis Redbirds,
-Springfield Cardinals, Peoria Chiefs, and Palm Beach Cardinals). The
+the St. Louis Cardinals major league club and all four of its minor league
+affiliates (Memphis Redbirds, Springfield Cardinals, Peoria Chiefs, and
+Palm Beach Cardinals). The
 JavaScript sends a `fetch()` request, gets back data in **JSON** format
 (a structured, text-based way of representing data), and uses it to build
 the score cards on the page — no page reload required, and it refreshes
@@ -68,7 +69,7 @@ portfolio/
 │   └── style.css       # Custom styling on top of Bootstrap
 ├── js/
 │   ├── script.js        # Interactivity (nav highlighting, form validation, etc.)
-│   └── scoreboard.js     # Fetches live Cardinals MiLB scores from the MLB Stats API
+│   └── scoreboard.js     # Fetches live Cardinals MLB/MiLB scores from the MLB Stats API
 ├── images/              # Profile photo and project screenshots (placeholders for now)
 └── README.md
 ```
@@ -80,9 +81,7 @@ portfolio/
 - Update the **Projects** section with real project names, descriptions,
   screenshots, and links as you build them throughout the course.
 - Update the social links and email address in the footer.
-- The contact form is currently a front-end-only demo (it shows a success
-  message but doesn't actually send an email) — connecting it to a real
-  email service is a good next step once you reach the back-end modules.
+- Update the phone number and email address in the **Contact Me** section.
 - The Scoreboard section uses MLB's free public API, which is unofficial
   and undocumented (no guaranteed uptime or support), but requires no API
   key or sign-up. If a team has no game that day, its card will say so.

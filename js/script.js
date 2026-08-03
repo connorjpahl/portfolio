@@ -44,20 +44,3 @@ backToTopBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// Contact form validation (Bootstrap custom validation)
-const contactForm = document.getElementById('contactForm');
-const formSuccess = document.getElementById('formSuccess');
-
-contactForm.addEventListener('submit', (event) => {
-  event.preventDefault();
-  event.stopPropagation();
-
-  if (contactForm.checkValidity()) {
-    formSuccess.classList.remove('d-none');
-    contactForm.reset();
-    contactForm.classList.remove('was-validated');
-  } else {
-    formSuccess.classList.add('d-none');
-    contactForm.classList.add('was-validated');
-  }
-});

@@ -56,7 +56,10 @@ the score cards on the page — no page reload required, and it refreshes
 itself automatically every 30 seconds while a game is being watched.
 Clicking a card fetches that game's full box score in a popup, including
 each player's stats for the game as well as their season-long AVG/OBP/SLG
-(their "slash line") and OPS, and ERA/WHIP for pitchers.
+(their "slash line") and OPS, and ERA/WHIP for pitchers. Every card also
+has a **Schedule** button that pulls up that team's games from the past
+week through the next two weeks, with results for completed games and
+times for upcoming ones.
 File: [`js/scoreboard.js`](js/scoreboard.js)
 
 ## Project structure

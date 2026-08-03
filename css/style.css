@@ -88,6 +88,15 @@ body {
   50% { opacity: 0.5; }
 }
 
+.scoreboard-schedule-row {
+  cursor: pointer;
+}
+
+.scoreboard-schedule-row:hover,
+.scoreboard-schedule-row:focus-visible {
+  background-color: rgba(52, 152, 219, 0.15);
+}
+
 /* ---------- Footer ---------- */
 footer {
   background-color: var(--brand-primary);

@@ -11,7 +11,14 @@
       "Bash(curl -s -o /dev/null -w \"index.html: %{http_code}\\\\n\" http://localhost:8642/index.html)",
       "Bash(curl -s -o /dev/null -w \"script.js: %{http_code}\\\\n\" http://localhost:8642/js/script.js)",
       "Bash(curl -s -o /dev/null -w \"images/headshot.png: %{http_code}\\\\n\" http://localhost:8642/images/headshot.png)",
-      "Bash(curl -s -o /dev/null -w \"favicon.svg: %{http_code}\\\\n\" http://localhost:8642/images/favicon.svg)"
+      "Bash(curl -s -o /dev/null -w \"favicon.svg: %{http_code}\\\\n\" http://localhost:8642/images/favicon.svg)",
+      "Bash(curl -s \"https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=138&startDate=2026-07-28&endDate=2026-08-05\")",
+      "Bash(curl -s \"https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=138&startDate=2026-07-28&endDate=2026-07-29\")",
+      "Bash(curl -s \"https://statsapi.mlb.com/api/v1/schedule?sportId=11&teamId=235&startDate=2026-07-26&endDate=2026-08-16\")",
+      "Bash(curl -s \"https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=138&startDate=2026-01-01&endDate=2026-12-31\")",
+      "Bash(curl -s \"https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=138&startDate=2026-01-01&endDate=2026-12-31&gameType=R\")",
+      "Bash(curl -s -o /dev/null -w \"style.css: %{http_code}\\\\n\" http://localhost:8642/css/style.css)",
+      "Bash(curl -s \"https://statsapi.mlb.com/api/v1/schedule?sportId=14&teamId=279&startDate=2026-01-01&endDate=2026-12-31&gameType=R\")"
     ]
   }
 }

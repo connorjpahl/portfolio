@@ -2,7 +2,7 @@
 
 A personal portfolio site built as part of Nucamp's Web Development Bootcamp.
 It's a single page with sections for an intro, an about-me blurb, skills, a
-live sports scoreboard, project cards, and a contact form.
+live sports scoreboard, and contact info.
 
 ## How to view it
 
@@ -39,9 +39,8 @@ like the collapsing mobile navigation menu.
 ### JavaScript — the behavior
 JavaScript makes the page interactive. Without it, a web page just sits
 there. With it, the page can react to what a user does — for example,
-highlighting the current section in the nav bar as you scroll, showing a
-"back to top" button, or checking that a contact form was filled out
-correctly before showing a success message.
+highlighting the current section in the nav bar as you scroll, or showing
+a "back to top" button once you scroll down.
 File: [`js/script.js`](js/script.js)
 
 ### API — pulling in live data
@@ -68,18 +67,15 @@ portfolio/
 ├── css/
 │   └── style.css       # Custom styling on top of Bootstrap
 ├── js/
-│   ├── script.js        # Interactivity (nav highlighting, form validation, etc.)
+│   ├── script.js        # Interactivity (nav highlighting, back-to-top button, etc.)
 │   └── scoreboard.js     # Fetches live Cardinals MLB/MiLB scores from the MLB Stats API
-├── images/              # Profile photo and project screenshots (placeholders for now)
+├── images/              # Profile photo
 └── README.md
 ```
 
 ## Customizing this site
 
 - Swap the placeholder text in the **About** section for your own bio.
-- Replace `images/profile-placeholder.svg` with a real photo.
-- Update the **Projects** section with real project names, descriptions,
-  screenshots, and links as you build them throughout the course.
 - Update the social links and email address in the footer.
 - Update the phone number and email address in the **Contact Me** section.
 - The Scoreboard section uses MLB's free public API, which is unofficial

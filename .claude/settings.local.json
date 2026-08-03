@@ -9,7 +9,9 @@
       "Bash(curl -s \"https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=138&date=2026-08-01&hydrate=linescore\")",
       "Bash(curl -s \"https://statsapi.mlb.com/api/v1/game/822781/boxscore\")",
       "Bash(curl -s -o /dev/null -w \"index.html: %{http_code}\\\\n\" http://localhost:8642/index.html)",
-      "Bash(curl -s -o /dev/null -w \"script.js: %{http_code}\\\\n\" http://localhost:8642/js/script.js)"
+      "Bash(curl -s -o /dev/null -w \"script.js: %{http_code}\\\\n\" http://localhost:8642/js/script.js)",
+      "Bash(curl -s -o /dev/null -w \"images/headshot.png: %{http_code}\\\\n\" http://localhost:8642/images/headshot.png)",
+      "Bash(curl -s -o /dev/null -w \"favicon.svg: %{http_code}\\\\n\" http://localhost:8642/images/favicon.svg)"
     ]
   }
 }

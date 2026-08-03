@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(open http://localhost:8642/index.html)",
+      "Bash(curl -s \"https://statsapi.mlb.com/api/v1/game/816400/boxscore\")",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -s -o /dev/null -w \"scoreboard.js: %{http_code}\\\\n\" http://localhost:8642/js/scoreboard.js)"
+    ]
+  }
+}

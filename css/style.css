@@ -62,6 +62,32 @@ body {
   color: var(--brand-primary);
 }
 
+/* ---------- Scoreboard ---------- */
+.scoreboard-card {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.scoreboard-live-badge {
+  animation: pulse 1.5s infinite;
+}
+
+.scoreboard-card-clickable {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.scoreboard-card-clickable:hover,
+.scoreboard-card-clickable:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
 /* ---------- Projects ---------- */
 .project-card {
   border: none;

@@ -1,8 +1,8 @@
 # Connor Pahl — Portfolio Website
 
 A personal portfolio site built as part of Nucamp's Web Development Bootcamp.
-It's a single page with sections for an intro, an about-me blurb, skills,
-project cards, and a contact form.
+It's a single page with sections for an intro, an about-me blurb, skills, a
+live sports scoreboard, project cards, and a contact form.
 
 ## How to view it
 
@@ -44,6 +44,21 @@ highlighting the current section in the nav bar as you scroll, showing a
 correctly before showing a success message.
 File: [`js/script.js`](js/script.js)
 
+### API — pulling in live data
+An API (Application Programming Interface) is how one program asks another
+program for data. This site's **Scoreboard** section calls the free, public
+[MLB Stats API](https://statsapi.mlb.com) to fetch today's live scores for
+all four St. Louis Cardinals minor league affiliates (Memphis Redbirds,
+Springfield Cardinals, Peoria Chiefs, and Palm Beach Cardinals). The
+JavaScript sends a `fetch()` request, gets back data in **JSON** format
+(a structured, text-based way of representing data), and uses it to build
+the score cards on the page — no page reload required, and it refreshes
+itself automatically every 30 seconds while a game is being watched.
+Clicking a card fetches that game's full box score in a popup, including
+each player's stats for the game as well as their season-long AVG/OBP/SLG
+(their "slash line") and OPS, and ERA/WHIP for pitchers.
+File: [`js/scoreboard.js`](js/scoreboard.js)
+
 ## Project structure
 
 ```
@@ -52,7 +67,8 @@ portfolio/
 ├── css/
 │   └── style.css       # Custom styling on top of Bootstrap
 ├── js/
-│   └── script.js       # Interactivity (nav highlighting, form validation, etc.)
+│   ├── script.js        # Interactivity (nav highlighting, form validation, etc.)
+│   └── scoreboard.js     # Fetches live Cardinals MiLB scores from the MLB Stats API
 ├── images/              # Profile photo and project screenshots (placeholders for now)
 └── README.md
 ```
@@ -67,3 +83,6 @@ portfolio/
 - The contact form is currently a front-end-only demo (it shows a success
   message but doesn't actually send an email) — connecting it to a real
   email service is a good next step once you reach the back-end modules.
+- The Scoreboard section uses MLB's free public API, which is unofficial
+  and undocumented (no guaranteed uptime or support), but requires no API
+  key or sign-up. If a team has no game that day, its card will say so.

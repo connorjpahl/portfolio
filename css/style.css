@@ -1,0 +1,98 @@
+/* ---------- Variables ---------- */
+:root {
+  --brand-primary: #2c3e50;
+  --brand-accent: #3498db;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+  color: #2c2c2c;
+}
+
+/* ---------- Navbar ---------- */
+#mainNav {
+  background-color: rgba(44, 62, 80, 0.95);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  color: var(--brand-accent) !important;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-accent));
+  padding-top: 80px;
+}
+
+/* ---------- Section titles ---------- */
+.section-title {
+  position: relative;
+  font-weight: 700;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--brand-accent);
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+/* ---------- About ---------- */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 4px solid var(--brand-accent);
+}
+
+/* ---------- Skills ---------- */
+.skill-icon {
+  font-size: 3rem;
+  color: var(--brand-primary);
+}
+
+/* ---------- Projects ---------- */
+.project-card {
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.project-card .card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: var(--brand-primary);
+}
+
+/* ---------- Back to top button ---------- */
+#backToTop {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 46px;
+  height: 46px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}

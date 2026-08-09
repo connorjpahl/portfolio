@@ -28,6 +28,7 @@
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#scoreboard">Scoreboard</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
@@ -89,12 +90,72 @@
           <i class="bi bi-filetype-js skill-icon"></i>
           <h5 class="mt-2">JavaScript</h5>
         </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-layers skill-icon"></i>
+          <h5 class="mt-2">React</h5>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-lightning-charge skill-icon"></i>
+          <h5 class="mt-2">Next.js</h5>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-filetype-tsx skill-icon"></i>
+          <h5 class="mt-2">TypeScript</h5>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-palette skill-icon"></i>
+          <h5 class="mt-2">Tailwind CSS</h5>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-database skill-icon"></i>
+          <h5 class="mt-2">Supabase</h5>
+        </div>
+        <div class="col-6 col-md-3">
+          <i class="bi bi-cloud skill-icon"></i>
+          <h5 class="mt-2">Vercel</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Projects</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <div class="card project-card h-100">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-start justify-content-between mb-2">
+                <h3 class="h5 card-title mb-0">Nestbook</h3>
+                <i class="bi bi-github fs-4 text-muted"></i>
+              </div>
+              <p class="card-text text-muted flex-grow-1">
+                A multi-tenant family timeline where parents and caregivers share photos,
+                videos, and milestones as a child grows. Built with the Next.js App Router,
+                Supabase for auth and Postgres storage with row-level security, and deployed
+                on Vercel.
+              </p>
+              <div class="mb-3">
+                <span class="badge bg-light text-dark border me-1 mb-1">Next.js</span>
+                <span class="badge bg-light text-dark border me-1 mb-1">React</span>
+                <span class="badge bg-light text-dark border me-1 mb-1">TypeScript</span>
+                <span class="badge bg-light text-dark border me-1 mb-1">Tailwind CSS</span>
+                <span class="badge bg-light text-dark border me-1 mb-1">Supabase</span>
+                <span class="badge bg-light text-dark border mb-1">Vercel</span>
+              </div>
+              <a href="https://github.com/connorjpahl/nestbook" target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm align-self-start">
+                <i class="bi bi-github me-1"></i> View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Scoreboard -->
-  <section id="scoreboard" class="py-5">
+  <section id="scoreboard" class="py-5 bg-light">
     <div class="container">
       <h2 class="section-title text-center mb-2">Cardinals Organization Scoreboard</h2>
       <p class="text-center text-muted mb-4">
@@ -144,7 +205,7 @@
   </div>
 
   <!-- Contact -->
-  <section id="contact" class="py-5 bg-light">
+  <section id="contact" class="py-5">
     <div class="container">
       <h2 class="section-title text-center mb-5">Contact Me</h2>
       <div class="row justify-content-center">
